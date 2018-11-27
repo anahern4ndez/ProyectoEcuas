@@ -24,8 +24,6 @@ public class TresPisos : MonoBehaviour {
 	private int N; //cantidad de datos
 	// Use this for initialization
 	void Start () {
-		/* ejecucion de .py */
-
 
         // Display the file contents by using a foreach loop.
 
