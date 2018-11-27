@@ -10,15 +10,15 @@ from matplotlib.font_manager import FontProperties
 
 # Parameter values
 # Masses:
-m1 = 2500
-m2 = 5000
-m3 = 7500
-m4 = 10000
+m1 = 10000
+m2 = 7500
+m3 = 5000
+m4 = 2500
 # Spring constants
-k1 = 30000
-k2 = 30000
-k3 = 30000
-k4 = 30000
+k1 = 100000
+k2 = 100000
+k3 = 100000
+k4 = 100000
 # Friction coefficients
 b1 = 0.05
 b2 = 0.05
