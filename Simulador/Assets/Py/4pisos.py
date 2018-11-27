@@ -15,15 +15,15 @@ m2 = 7500
 m3 = 5000
 m4 = 2500
 # Spring constants
-k1 = 30000
-k2 = 30000
-k3 = 30000
-k4 = 30000
+k1 = 10000
+k2 = 10000
+k3 = 10000
+k4 = 10000
 # Friction coefficients
-b1 = 0.05
-b2 = 0.05
-b3 = 0.05
-b4 = 0.05
+b1 = 0.1
+b2 = 0.1
+b3 = 0.1
+b4 = 0.1
 
 # Initial conditions
 # x1 and x2 are the initial displacements; y1 and y2 are the initial velocities
