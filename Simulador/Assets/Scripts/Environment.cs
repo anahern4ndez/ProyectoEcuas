@@ -12,7 +12,7 @@ public class Environment : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        string[] lines = System.IO.File.ReadAllLines("Assets/Py/four_floors.dat");
+        string[] lines = System.IO.File.ReadAllLines("Assets/Py/two_floors.dat");
         N = lines.Length;
         piso1x = new float[lines.Length]; 
         int i = 0;
