@@ -3,14 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Environment : MonoBehaviour {
-    public GameObject edif2;
-    public GameObject edif3;
-    public GameObject edif4;
+    float[] piso1x;
     public bool moviendo = false;
     private Vector3 posGameObject;
-
+    private float corrimiento;
+    int contadorPos = 0;
+    private int N; //cantidad de datos
     // Use this for initialization
     void Start () {
+
+        string[] lines = System.IO.File.ReadAllLines("Assets/Py/four_floors.dat");
+        N = lines.Length;
+        piso1x = new float[lines.Length]; 
+        int i = 0;
+        foreach (string line in lines)
+        {
+            // Use a tab to indent each line of the file.
+            string[] sep;
+            sep = line.Split();
+            piso1x[i] = float.Parse(sep[1]);
+            i++;
+        }
         posGameObject = this.gameObject.transform.position; 
         StartCoroutine("CorutinaUpdatePos");
 
@@ -22,17 +35,10 @@ public class Environment : MonoBehaviour {
 	}
     IEnumerator CorutinaUpdatePos()
     {
-        while (edif2.instance.moviendo)
+        while (contadorPos < N)
         {
             yield return new WaitForSeconds(0.1f);
-            //posicion del suelo 
-            float posx = 
-            //promedios de posiciones
-            float corrimiento = (edif2.gameObject.transform.position.x + edif3.gameObject.transform.position.x + edif4.gameObject.transform.position.x)/3.0;
-            this.gameObject.transform.position = new Vector3(this.gameObject.)
-            hueso1.transform.position = new Vector3(hueso1pos.x + piso1x[contadorPos], hueso1pos.y, hueso1pos.z);
-            hueso2.transform.position = new Vector3(hueso2pos.x + piso2x[contadorPos], hueso2pos.y, hueso2pos.z);
-            hueso3.transform.position = new Vector3(hueso3pos.x + piso3x[contadorPos], hueso3pos.y, hueso3pos.z);
+            this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x +(piso1x[contadorPos]/10f), this.gameObject.transform.position.y, this.gameObject.transform.position.z);
             contadorPos++;
         }
     }
