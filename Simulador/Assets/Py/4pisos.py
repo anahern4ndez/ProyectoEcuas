@@ -12,10 +12,10 @@ m2 = 5000
 m3 = 7500
 m4 = 10000
 # Spring constants
-k1 = 20000
-k2 = 20000
-k3 = 20000
-k4 = 20000
+k1 = 100000
+k2 = 100000
+k3 = 100000
+k4 = 100000
 # Friction coefficients
 b1 = 0.05
 b2 = 0.05
@@ -36,7 +36,7 @@ y4 = 0.0
 # ODE solver parameters
 abserr = 1.0e-8
 relerr = 1.0e-6
-stoptime = 10 #tiempo (seg) en el que se detendra
+stoptime = 15 #tiempo (seg) en el que se detendra
 numpoints = 306 #cantidad de datos (soluciones) a sacar
 
 # Create the time samples for the output of the ODE solver.

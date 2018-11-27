@@ -70,7 +70,7 @@ def vectorfield4(w, t, p):
          y2,
          (-b2 * y2 - k2 * (x2 - x1 )) / m2,
          y3,
-         (-b2 * y3 - k3 * (x3 - x2 -x1)) / m3,
+         (-b3 * y3 - k3 * (x3 - x2 -x1)) / m3,
          y4,
          (-b4 * y4 -k4 * (x4 - x3 -x2 -x1)) / m4]
     return f
