@@ -10,8 +10,8 @@ from matplotlib.font_manager import FontProperties
 
 # Parameter values
 # Masses:
-m1 = 5000
-m2 = 2500
+m1 = 2500
+m2 = 5000
 # Spring constants
 k1 = 35000
 k2 = 35000
