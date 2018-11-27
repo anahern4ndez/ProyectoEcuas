@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{9F414975-6244-D4B5-9187-7204217B279B}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Environment.cs">
     <Files>
-      <File FileName="Assets/Scripts/CuatroPisos.cs" Line="45" Column="58" />
+      <File FileName="Assets/Scripts/CuatroPisos.cs" Line="45" Column="23" />
       <File FileName="Assets/Scripts/DosPisos.cs" Line="31" Column="11" />
       <File FileName="Assets/Scripts/TresPisos.cs" Line="41" Column="17" />
-      <File FileName="Assets/Scripts/Environment.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Environment.cs" Line="25" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -14,7 +14,7 @@ m1 = 7500
 m2 = 5000
 m3 = 2500
 # Spring constants
-k1 = 100000
+k1 = 10000
 k2 = 100000
 k3 = 100000
 # Friction coefficients
