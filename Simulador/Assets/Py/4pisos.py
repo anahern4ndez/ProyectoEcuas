@@ -58,7 +58,7 @@ wsol = odeint(vectorfield4, w0, t, args=(p,),
 with open('four_floors.dat', 'w') as f:
     # Print & save the solution.
     for t1, w1 in zip(t, wsol):
-        print >> f, t1, w1[6], w1[4], w1[3], w1[1]
+        print >> f, t1, w1[6], w1[4], w1[2], w1[1]
 
 t, x1, x2, x3, x4 = loadtxt('four_floors.dat', unpack=True)
 
