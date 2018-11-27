@@ -53,7 +53,7 @@ wsol = odeint(vectorfield3, w0, t, args=(p,),
 with open('three_floors.dat', 'w') as f:
     # Print & save the solution.
     for t1, w1 in zip(t, wsol):
-        print >> f, t1, w1[4], w1[2], w1[0]
+        print >> f, t1, w1[4], w1[2], w1[1]
 
 t, x1, x2, x3 = loadtxt('three_floors.dat', unpack=True)
 
