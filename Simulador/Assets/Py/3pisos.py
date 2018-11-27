@@ -4,6 +4,9 @@
 # Gabriela Malouf
 from scipy.integrate import odeint
 from modulo import *
+from numpy import loadtxt
+from pylab import figure, plot, xlabel, grid, hold, legend, title, savefig
+from matplotlib.font_manager import FontProperties
 
 # Parameter values
 # Masses:
@@ -50,5 +53,22 @@ wsol = odeint(vectorfield3, w0, t, args=(p,),
 with open('three_floors.dat', 'w') as f:
     # Print & save the solution.
     for t1, w1 in zip(t, wsol):
-        print >> f, w1[0], w1[2], w1[4]
+        print >> f, t1, w1[0], w1[2], w1[4]
+
+t, x1, x2, x3 = loadtxt('three_floors.dat', unpack=True)
+
+figure(1, figsize=(6, 4.5))
+
+xlabel('t')
+grid(True)
+hold(True)
+lw = 1
+
+plot(t, x1, 'b', linewidth=lw)
+plot(t, x2, 'g', linewidth=lw)
+plot(t, x3, 'r', linewidth=lw)
+
+legend((r'$m_1$', r'$m_2$', r'$m_3$'), prop=FontProperties(size=12))
+title('Mass Displacements for the\n Three floors building')
+savefig('three_floors.png', dpi=100)
 
