@@ -4,7 +4,7 @@
       <File FileName="Assets/Scripts/CuatroPisos.cs" Line="45" Column="23" />
       <File FileName="Assets/Scripts/DosPisos.cs" Line="31" Column="11" />
       <File FileName="Assets/Scripts/TresPisos.cs" Line="41" Column="17" />
-      <File FileName="Assets/Scripts/Environment.cs" Line="15" Column="68" />
+      <File FileName="Assets/Scripts/Environment.cs" Line="25" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

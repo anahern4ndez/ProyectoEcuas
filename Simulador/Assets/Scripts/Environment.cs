@@ -21,7 +21,7 @@ public class Environment : MonoBehaviour {
             // Use a tab to indent each line of the file.
             string[] sep;
             sep = line.Split();
-            piso1x[i] = float.Parse(sep[1]);
+            piso1x[i] = float.Parse(sep[2]);
             i++;
         }
         posGameObject = this.gameObject.transform.position; 
