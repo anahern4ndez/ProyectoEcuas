@@ -15,10 +15,10 @@ m2 = 7500
 m3 = 5000
 m4 = 2500
 # Spring constants
-k1 = 100000
-k2 = 100000
-k3 = 100000
-k4 = 100000
+k1 = 10000
+k2 = 10000
+k3 = 10000
+k4 = 10000
 # Friction coefficients
 b1 = 0.05
 b2 = 0.05
@@ -58,7 +58,7 @@ wsol = odeint(vectorfield4, w0, t, args=(p,),
 with open('four_floors.dat', 'w') as f:
     # Print & save the solution.
     for t1, w1 in zip(t, wsol):
-        print >> f, t1, w1[6], w1[4], w1[2], w1[1]
+        print >> f, w1[6], w1[4], w1[2], w1[0]
 
 t, x1, x2, x3, x4 = loadtxt('four_floors.dat', unpack=True)
 
