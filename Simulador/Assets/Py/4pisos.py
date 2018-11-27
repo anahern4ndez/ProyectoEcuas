@@ -15,10 +15,10 @@ m2 = 7500
 m3 = 5000
 m4 = 2500
 # Spring constants
-k1 = 40000
-k2 = 40000
-k3 = 40000
-k4 = 40000
+k1 = 70000
+k2 = 70000
+k3 = 70000
+k4 = 70000
 # Friction coefficients
 b1 = 0.05
 b2 = 0.05
@@ -40,7 +40,7 @@ y4 = 0.0
 abserr = 1.0e-8
 relerr = 1.0e-6
 stoptime = 17.5 #tiempo (seg) en el que se detendra
-numpoints = 306 #cantidad de datos (soluciones) a sacar
+numpoints = 204 #cantidad de datos (soluciones) a sacar
 
 # Create the time samples for the output of the ODE solver.
 # I use a large number of points, only because I want to make
@@ -58,7 +58,7 @@ wsol = odeint(vectorfield4, w0, t, args=(p,),
 with open('four_floors.dat', 'w') as f:
     # Print & save the solution.
     for t1, w1 in zip(t, wsol):
-        print >> f, w1[6], w1[4], w1[2], w1[0]
+        print >> f, t1, w1[0], w1[2], w1[4], w1[6]
 
 t, x1, x2, x3, x4 = loadtxt('four_floors.dat', unpack=True)
 

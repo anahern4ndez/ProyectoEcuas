@@ -43,10 +43,10 @@ public class CuatroPisos : MonoBehaviour {
             // Use a tab to indent each line of the file.
 			string[] sep;
 			sep = line.Split();
-            piso1x[i] = float.Parse(sep[0]);
-			piso2x[i] = float.Parse(sep[1]);
-			piso3x[i] = float.Parse(sep[2]);
-            piso4x[i] = float.Parse(sep[3]);
+            piso1x[i] = float.Parse(sep[1]);
+			piso2x[i] = float.Parse(sep[2]);
+			piso3x[i] = float.Parse(sep[3]);
+            piso4x[i] = float.Parse(sep[4]);
             i++;
         }
 		hueso1pos = hueso1.transform.position;
