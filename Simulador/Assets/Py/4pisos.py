@@ -39,7 +39,7 @@ y4 = 0.0
 # ODE solver parameters
 abserr = 1.0e-8
 relerr = 1.0e-6
-stoptime = 17.5 #tiempo (seg) en el que se detendra
+stoptime = 15 #tiempo (seg) en el que se detendra
 numpoints = 306 #cantidad de datos (soluciones) a sacar
 
 # Create the time samples for the output of the ODE solver.
