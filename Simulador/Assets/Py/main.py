@@ -4,10 +4,8 @@
 # Ana Lucia Hernandez
 # Ana Gabriela
 
-
-from modulo import *
-
-ciclo = 0
-
-while (ciclo==0):
-    print ('Seleccione la opción de edificio que desea simular su movimiento de un 
+# para correr los tres programas desde uno solo
+import os
+os.system("2pisos.py")
+os.system("3pisos.py")
+os.system("4pisos.py")

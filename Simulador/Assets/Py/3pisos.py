@@ -7,9 +7,9 @@ from modulo import *
 
 # Parameter values
 # Masses:
-m1 = 2500
+m1 = 7500
 m2 = 5000
-m3 = 7500
+m3 = 2500
 # Spring constants
 k1 = 10000
 k2 = 10000

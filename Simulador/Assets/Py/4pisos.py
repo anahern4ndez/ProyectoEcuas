@@ -7,10 +7,10 @@ from modulo import *
 
 # Parameter values
 # Masses:
-m1 = 2500
-m2 = 5000
-m3 = 7500
-m4 = 10000
+m1 = 10000
+m2 = 7500
+m3 = 5000
+m4 = 2500
 # Spring constants
 k1 = 30000
 k2 = 30000
@@ -24,19 +24,19 @@ b4 = 0.05
 
 # Initial conditions
 # x1 and x2 are the initial displacements; y1 and y2 are the initial velocities
-x1  = 0.5
+x1  = 0.1
 y1 = 0.0
-x2 = 0.5
+x2 = 0.1
 y2 = 0.0
-x3  = 0.5
+x3  = 0.1
 y3  = 0.0
-x4  = 0.5
+x4  = 0.1
 y4 = 0.0
 
 # ODE solver parameters
 abserr = 1.0e-8
 relerr = 1.0e-6
-stoptime = 10 #tiempo (seg) en el que se detendra
+stoptime = 17.5 #tiempo (seg) en el que se detendra
 numpoints = 306 #cantidad de datos (soluciones) a sacar
 
 # Create the time samples for the output of the ODE solver.
