@@ -1,8 +1,8 @@
 # Earthquake Simulator 
 
-Final Project
-Course: Differential Equations 1 
-May 2019. 
+Final Project <br />
+Course: Differential Equations 1 <br />
+May 2019. <br />
 
 ## Description 
 
@@ -30,6 +30,6 @@ Here is a more detailed description of the tools used:
 
 ### Authors
 
-**Ana Lucía Hernández** - [her17138](github.com/her17138).
+**Ana Lucía Hernández** - [her17138](github.com/her17138).<br />
 **María Fernanda López** - [diazMafer](github.com/diazMafer).
 
